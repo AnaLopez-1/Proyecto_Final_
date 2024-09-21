@@ -4,7 +4,7 @@ public class Pick_Ups extends Vehiculo{
     private String capacidadCajaDeCarga;
     private int numeroBolsasDeAire;
 
-    public Pick_Ups (int numeroPasajeros, int numeroPuertas, String capacidadCajaDeCarga, int numeroBolsasDeAire){
+    public Pick_Ups (String marca, boolean nuevo, int modelo, String cambios, int velocidadMaxima, String cilindraje, int numeroPasajeros, int numeroPuertas, String capacidadCajaDeCarga, int numeroBolsasDeAire){
         super(marca, nuevo, modelo, cambios, velocidadMaxima, cilindraje);
         this.numeroPasajeros=numeroPasajeros;
         this.numeroPuertas=numeroPuertas;

@@ -4,7 +4,7 @@ public class Buses extends Vehiculo{
     private String capacidadMaletero;
     private int numeroBolsasDeAire;
 
-    public Buses (int numeroPasajeros, int numeroPuertas, String capacidadMaletero, int numeroBolsasDeAire){
+    public Buses (String marca, boolean nuevo, int modelo, String cambios, int velocidadMaxima, String cilindraje, int numeroPasajeros, int numeroPuertas, String capacidadMaletero, int numeroBolsasDeAire){
         super(marca, nuevo, modelo, cambios, velocidadMaxima, cilindraje);
         this.numeroPasajeros=numeroPasajeros;
         this.numeroPuertas=numeroPuertas;

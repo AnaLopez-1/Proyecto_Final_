@@ -1,12 +1,12 @@
 public class Vehiculo {
     private String marca;
-    private String nuevo;
-    private boolean modelo;
+    private boolean nuevo;
+    private int modelo;
     private String cambios;
     private int velocidadMaxima;
     private String cilindraje;
   
-    public Vehiculo (String marca, String nuevo, boolean modelo, String cambios, int velocidadMaxima, String cilindraje){
+    public Vehiculo (String marca, boolean nuevo, int modelo, String cambios, int velocidadMaxima, String cilindraje){
         this.marca=marca;
         this.nuevo=nuevo;
         this.modelo=modelo;
@@ -23,19 +23,19 @@ public class Vehiculo {
         this.marca = marca;
     }
 
-    public String getNuevo() {
+    public boolean getNuevo() {
         return nuevo;
     }
 
-    public void setNuevo(String nuevo) {
+    public void setNuevo(boolean nuevo) {
         this.nuevo = nuevo;
     }
 
-    public boolean isModelo() {
+    public int isModelo() {
         return modelo;
     }
 
-    public void setModelo(boolean modelo) {
+    public void setModelo(int modelo) {
         this.modelo = modelo;
     }
 
