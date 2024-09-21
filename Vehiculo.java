@@ -5,18 +5,14 @@ public class Vehiculo {
     private String cambios;
     private int velocidadMaxima;
     private String cilindraje;
-    private String tipoCombustible;
-    private String transmision;
-
-    public Vehiculo (String marca, String nuevo, boolean modelo, String cambios, int velocidadMaxima, String cilindraje, String tipoCombustible, String transmision){
+  
+    public Vehiculo (String marca, String nuevo, boolean modelo, String cambios, int velocidadMaxima, String cilindraje){
         this.marca=marca;
         this.nuevo=nuevo;
         this.modelo=modelo;
         this.cambios=cambios;
         this.velocidadMaxima=velocidadMaxima;
         this.cilindraje=cilindraje;
-        this.tipoCombustible=tipoCombustible;
-        this.transmision=transmision;
     }
 
     public String getMarca() {
@@ -67,22 +63,6 @@ public class Vehiculo {
         this.cilindraje = cilindraje;
     }
 
-    public String getTipoCombustible() {
-        return tipoCombustible;
-    }
-
-    public void setTipoCombustible(String tipoCombustible) {
-        this.tipoCombustible = tipoCombustible;
-    }
-
-    public String getTransmision() {
-        return transmision;
-    }
-
-    public void setTransmision(String transmision) {
-        this.transmision = transmision;
-    }
-
     @Override
     public String toString() {
         return "Vehiculo\n"+
@@ -91,8 +71,6 @@ public class Vehiculo {
         "modelo:" + modelo + "\n"+
         "cambios:" + cambios + "\n"+
         "velocidadMaxima:" + velocidadMaxima + "\n"+
-        "cilindraje:" + cilindraje + "\n"+
-        "tipoCombustible:" + tipoCombustible + "\n"
-        "transmision=" + transmision;
+        "cilindraje:" + cilindraje;
     }
 }
