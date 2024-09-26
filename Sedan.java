@@ -1,17 +1,17 @@
-public class Sedan {
+public class Sedan extends Vehiculo {
     private int numeroPasajeros;
     private int numeroPuertas;
     private String capacidadMaletero;
-    private double tieneONoAireAcondicionado;
-    private double tieneONoCamaraReversa;
-    private double tieneONoVelocidadCrucero;
-    private double numeroBolsasAire;
-    private double tieneONoAbs;
-    private double tieneONoSensoresColision;
-    private double tieneONoSensorDeTrafico;
-    private double tieneONoAsistenteDePermanencia;
+    private boolean tieneONoAireAcondicionado;
+    private boolean tieneONoCamaraReversa;
+    private boolean tieneONoVelocidadCrucero;
+    private boolean numeroBolsasAire;
+    private boolean tieneONoAbs;
+    private boolean tieneONoSensoresColision;
+    private boolean tieneONoSensorDeTrafico;
+    private boolean tieneONoAsistenteDePermanencia;
 
-    public Sedan (String marca, boolean esNuevo, int modelo, String cambios, int velocidadMaxima, String cilindraje, int numeroPasajeros, int numeroPuertas, String capacidadMaletero, double tieneONoAireAcondicionado, double tieneONoCamaraReversa, double tieneONoVelocidadCrucero, double numeroBolsasAire, double tieneONoAbs, double tieneONoSensoresColision, double tieneONoSensorDeTrafico, double tieneONoAsistenteDePermanencia){
+    public Sedan (String marca, boolean esNuevo, int modelo, String cambios, int velocidadMaxima, String cilindraje, int numeroPasajeros, int numeroPuertas, String capacidadMaletero, boolean tieneONoAireAcondicionado, boolean tieneONoCamaraReversa, boolean tieneONoVelocidadCrucero, boolean numeroBolsasAire, boolean tieneONoAbs, boolean tieneONoSensoresColision, boolean tieneONoSensorDeTrafico, boolean tieneONoAsistenteDePermanencia){
         super(marca, esNuevo, modelo, cambios, velocidadMaxima, cilindraje);
         this.numeroPasajeros=numeroPasajeros;
         this.numeroPuertas=numeroPuertas;
@@ -26,93 +26,116 @@ public class Sedan {
         this.tieneONoAsistenteDePermanencia=tieneONoAsistenteDePermanencia;
     }
 
+
     public int getNumeroPasajeros() {
         return numeroPasajeros;
     }
+
 
     public void setNumeroPasajeros(int numeroPasajeros) {
         this.numeroPasajeros = numeroPasajeros;
     }
 
+
     public int getNumeroPuertas() {
         return numeroPuertas;
     }
+
 
     public void setNumeroPuertas(int numeroPuertas) {
         this.numeroPuertas = numeroPuertas;
     }
 
+
     public String getCapacidadMaletero() {
         return capacidadMaletero;
     }
+
 
     public void setCapacidadMaletero(String capacidadMaletero) {
         this.capacidadMaletero = capacidadMaletero;
     }
 
-    public double getTieneONoAireAcondicionado() {
+
+    public boolean isTieneONoAireAcondicionado() {
         return tieneONoAireAcondicionado;
     }
 
-    public void setTieneONoAireAcondicionado(double tieneONoAireAcondicionado) {
+
+    public void setTieneONoAireAcondicionado(boolean tieneONoAireAcondicionado) {
         this.tieneONoAireAcondicionado = tieneONoAireAcondicionado;
     }
 
-    public double getTieneONoCamaraReversa() {
+
+    public boolean isTieneONoCamaraReversa() {
         return tieneONoCamaraReversa;
     }
 
-    public void setTieneONoCamaraReversa(double tieneONoCamaraReversa) {
+
+    public void setTieneONoCamaraReversa(boolean tieneONoCamaraReversa) {
         this.tieneONoCamaraReversa = tieneONoCamaraReversa;
     }
 
-    public double getTieneONoVelocidadCrucero() {
+
+    public boolean isTieneONoVelocidadCrucero() {
         return tieneONoVelocidadCrucero;
     }
 
-    public void setTieneONoVelocidadCrucero(double tieneONoVelocidadCrucero) {
+
+    public void setTieneONoVelocidadCrucero(boolean tieneONoVelocidadCrucero) {
         this.tieneONoVelocidadCrucero = tieneONoVelocidadCrucero;
     }
 
-    public double getNumeroBolsasAire() {
+
+    public boolean isNumeroBolsasAire() {
         return numeroBolsasAire;
     }
 
-    public void setNumeroBolsasAire(double numeroBolsasAire) {
+
+    public void setNumeroBolsasAire(boolean numeroBolsasAire) {
         this.numeroBolsasAire = numeroBolsasAire;
     }
 
-    public double getTieneONoAbs() {
+
+    public boolean isTieneONoAbs() {
         return tieneONoAbs;
     }
 
-    public void setTieneONoAbs(double tieneONoAbs) {
+
+    public void setTieneONoAbs(boolean tieneONoAbs) {
         this.tieneONoAbs = tieneONoAbs;
     }
 
-    public double getTieneONoSensoresColision() {
+
+    public boolean isTieneONoSensoresColision() {
         return tieneONoSensoresColision;
     }
 
-    public void setTieneONoSensoresColision(double tieneONoSensoresColision) {
+
+    public void setTieneONoSensoresColision(boolean tieneONoSensoresColision) {
         this.tieneONoSensoresColision = tieneONoSensoresColision;
     }
 
-    public double getTieneONoSensorDeTrafico() {
+
+    public boolean isTieneONoSensorDeTrafico() {
         return tieneONoSensorDeTrafico;
     }
 
-    public void setTieneONoSensorDeTrafico(double tieneONoSensorDeTrafico) {
+
+    public void setTieneONoSensorDeTrafico(boolean tieneONoSensorDeTrafico) {
         this.tieneONoSensorDeTrafico = tieneONoSensorDeTrafico;
     }
 
-    public double getTieneONoAsistenteDePermanencia() {
+
+    public boolean isTieneONoAsistenteDePermanencia() {
         return tieneONoAsistenteDePermanencia;
     }
 
-    public void setTieneONoAsistenteDePermanencia(double tieneONoAsistenteDePermanencia) {
+
+    public void setTieneONoAsistenteDePermanencia(boolean tieneONoAsistenteDePermanencia) {
         this.tieneONoAsistenteDePermanencia = tieneONoAsistenteDePermanencia;
     }
+
 
     @Override
     public String toString() {
