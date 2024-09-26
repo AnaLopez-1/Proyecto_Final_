@@ -1,14 +1,14 @@
 public class Vehiculo {
     private String marca;
-    private boolean nuevo;
+    private boolean esNuevo;
     private int modelo;
     private String cambios;
     private int velocidadMaxima;
     private String cilindraje;
   
-    public Vehiculo (String marca, boolean nuevo, int modelo, String cambios, int velocidadMaxima, String cilindraje){
+    public Vehiculo (String marca, boolean esNuevo, int modelo, String cambios, int velocidadMaxima, String cilindraje){
         this.marca=marca;
-        this.nuevo=nuevo;
+        this.esNuevo=esNuevo;
         this.modelo=modelo;
         this.cambios=cambios;
         this.velocidadMaxima=velocidadMaxima;
@@ -22,13 +22,17 @@ public class Vehiculo {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-
-    public boolean getNuevo() {
-        return nuevo;
+    
+    public boolean isEsNuevo() {
+        return esNuevo;
     }
 
-    public void setNuevo(boolean nuevo) {
-        this.nuevo = nuevo;
+    public void setEsNuevo(boolean esNuevo) {
+        this.esNuevo = esNuevo;
+    }
+
+    public int getModelo() {
+        return modelo;
     }
 
     public int isModelo() {
@@ -65,9 +69,8 @@ public class Vehiculo {
 
     @Override
     public String toString() {
-        return "Vehiculo\n"+
-        "marca:" + marca + "\n"+ 
-        "nuevo:" + nuevo + "\n"+
+        return "marca:" + marca + "\n"+ 
+        "esNuevo:" + esNuevo + "\n"+
         "modelo:" + modelo + "\n"+
         "cambios:" + cambios + "\n"+
         "velocidadMaxima:" + velocidadMaxima + "\n"+

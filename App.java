@@ -9,9 +9,12 @@ public class App {
         Concesionario concesionario = new Concesionario("CarMotion");
     
         // Crear Vehiculo
-        Vehiculo vehiculo = new Vehiculo("Toyota", true, 2022, "Automático", 180, "2.0L");
-        System.out.println("Detalles del Vehículo:");
-        System.out.println(vehiculo.toString());
+        Vehiculo vehiculo1 = new Vehiculo("Mercedes", false, 2019, "Manuales", 107, "1.8L");
+    
+        Vehiculo vehiculo2 = new Vehiculo("Toyota", true, 2022, "Automático", 180, "2.0L");
+        System.out.println("Detalles del Vehículo:\n");
+        System.out.println(vehiculo1.toString());
+        System.out.println(vehiculo2.toString());
         System.out.println();
     
         // Crear Buses
