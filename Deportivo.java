@@ -3,8 +3,8 @@ public class Deportivo extends Vehiculo {
     private int numeroPuertas;
     private int numeroBolsasDeAire;
 
-    public Deportivo (String marca, boolean nuevo, int modelo, String cambios, int velocidadMaxima, String cilindraje, int numeroPasajeros, int numeroPuertas, int numeroBolsasDeAire){
-        super(marca, nuevo, modelo, cambios, velocidadMaxima, cilindraje);
+    public Deportivo (String marca, boolean esNuevo, int modelo, String cambios, int velocidadMaxima, String cilindraje, int numeroPasajeros, int numeroPuertas, int numeroBolsasDeAire){
+        super(marca, esNuevo, modelo, cambios, velocidadMaxima, cilindraje);
         this.numeroPasajeros=numeroPasajeros;
         this.numeroPuertas=numeroPuertas;
         this.numeroBolsasDeAire=numeroBolsasDeAire;
@@ -39,6 +39,4 @@ public class Deportivo extends Vehiculo {
         return "Deportivos [numeroPasajeros=" + numeroPasajeros + ", numeroPuertas=" + numeroPuertas
                 + ", numeroBolsasDeAire=" + numeroBolsasDeAire + "]";
     }
-
-    
 }
