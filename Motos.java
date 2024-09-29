@@ -6,7 +6,7 @@ public class Motos extends Vehiculo {
     @Override
     public String toString() {
         return "Motos [marca=" + getMarca() + 
-        ", esNuevo=" + esNuevo() + 
+        ", esNuevo=" + getEsNuevo() + 
         ", modelo=" + getModelo() + 
         ", cambios=" + getCambios() + 
         ", velocidadMaxima=" + getVelocidadMaxima() + 

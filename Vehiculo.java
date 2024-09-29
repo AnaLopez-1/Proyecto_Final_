@@ -22,6 +22,10 @@ public class Vehiculo {
     public void setMarca(String marca) {
         this.marca = marca;
     }
+
+    public int getEsNuevo() {
+        return modelo;
+    }
     
     public boolean isEsNuevo() {
         return esNuevo;
